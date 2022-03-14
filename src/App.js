@@ -24,6 +24,7 @@ const App = () => {
       "status": "IN_PROGRESS"
     };
     setBoardData(newBoardData);
+    setCharArray([]);
     localStorage.setItem("board-data", JSON.stringify(newBoardData));
   }
 
@@ -42,8 +43,6 @@ const App = () => {
         "correctCharArray": [],
         "status": "IN_PROGRESS"
       };
-      let justTryingSomething = boardData;
-      console.log(justTryingSomething)
       setBoardData(newBoardData);
       localStorage.setItem("board-data", JSON.stringify(newBoardData));
     }
@@ -156,7 +155,8 @@ const App = () => {
   return (
     <div className='container'>
       <div className='top'>
-        <div className='title'>Love.U</div>
+        <div className='title'>Love</div>
+        <div className='title2'>.U</div>
         <button className="reset-board" onClick={resetBoard}>{"\u27f3"}</button>
       </div>
       <p>Você deve acertar o elogio ou adjetivo, positivo.</p>
