@@ -5,6 +5,7 @@
     justify-content: space-between;
     height: 100vh;
     align-items: center;
+    background-color: rgb(136, 64, 136);
 }
 .message{
     position: absolute;
@@ -20,6 +21,18 @@
     letter-spacing: 0.2rem;
     font-size: 36px;
     font-weight: 600;
+    color:white;
+}
+
+.title2{
+  letter-spacing: 0.2rem;
+  font-size: 36px;
+  font-weight: 600;
+  color:rgb(255, 0, 191);
+}
+
+p {
+  color: white;
 }
 
 .cube-row{
@@ -33,6 +46,7 @@
     flex-direction: column;
     gap:5px;
 }
+
 .letter{
     text-transform: uppercase;
     display: flex;
@@ -43,13 +57,15 @@
     font-weight: 700;
     width: 60px;
     height: 60px;
-    border: 2px solid #d3d6da;
+    border: 2px solid #570d69;
+    border-radius: 10%;
+    color: white;
 }
 
 .reset-board{
     padding: 5px 5px 5px 20px;
     background: none;
-    color: #6aaa64;
+    color: #2bb61f;
     font-size: 38px;
 }
 
@@ -57,10 +73,7 @@
     display: flex;
     flex-direction: row;
     padding:10px 20px;
-    border-bottom: 1px solid grey;
-}
-.bottom{
-
+    border-bottom: 1px solid white;
 }
 
 .cube-row.error {
@@ -88,13 +101,13 @@
   }
 
 .correct{
-    background: #6aaa64;
+    background: #25db14;
     color: #fff;
 
 }
 
 .present{
-    background: #c9b458;
+    background: #ccb138;
     color: #fff;
 }
 
