@@ -1,7 +1,9 @@
+
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Keyboard from './components/Keyboard';
 import { wordList } from './constants/data';
+import MenuContainer from './components/Menu';
 
 const App = () => {
   const [boardData, setBoardData] = useState(JSON.parse(localStorage.getItem("board-data")));
@@ -93,7 +95,7 @@ const App = () => {
       status = "GANHOU";
       handleMessage("Parabéns! Você acertou.")
     }
-    else if (rowIndex + 1 === 6) {
+    else if (rowIndex + 1 === 5) {
       status = "LOST";
       handleMessage(boardData.solution)
     }
@@ -164,7 +166,7 @@ const App = () => {
         {message}
       </div>}
       <div className='cube'>
-        {[0, 1, 2, 3, 4, 5].map((row, rowIndex) => (
+        {[0, 1, 2, 3, 4].map((row, rowIndex) => (
           <div className={`cube-row ${boardData && row === boardData.rowIndex && error && "error"}`} key={rowIndex}>
             {
               [0, 1, 2, 3, 4, 5, 6, 7, 8].map((column, letterIndex) => (
@@ -181,8 +183,8 @@ const App = () => {
         <Keyboard boardData={boardData}
           handleKeyPress={handleKeyPress} />
       </div>
-    </div>);
-
+      <MenuContainer></MenuContainer>
+    </div >);
 };
 
 export default App;

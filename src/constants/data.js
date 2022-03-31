@@ -42,7 +42,8 @@ export const wordList = {
     "exultante"
   ],
   "f": [
-    "felizarda"
+    "felizarda",
+    "felizonas"
   ],
   "g": [
     "grandiosa",
