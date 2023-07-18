@@ -2,7 +2,7 @@
 
 <h1 align="center">Love.UUU</h1>
 
-![issues](https://img.shields.io/github/issues/caroolt/love.uuu?color=red) ![license](https://img.shields.io/github/license/caroolt/love.uuu)
+🏗️Em Desenvolvimento
 
 ![Duas pessoas fazendo o símbolos de coração com as mãos](./img/readme.png)
 
