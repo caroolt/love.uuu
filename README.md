@@ -2,7 +2,7 @@
 
 <h1 align="center">Love.UUU</h1>
 
-🏗️Em Desenvolvimento
+🏗️ Em Desenvolvimento
 
 ![Duas pessoas fazendo o símbolos de coração com as mãos](./img/readme.png)
 
